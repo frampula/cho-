@@ -6,16 +6,42 @@
     <title>Learn HTML & CSS</title>
 
     <style>
+      h1,
+      h2,
+      h3 {
+        font-size: 100px;
+        background-color: aquamarine;
+      }
+
       p {
         /* color: grey; -- word */
         /* color: rgb(from color 10 50 13); -- rgb */
-        color:red;
+        color: red;
         font-size: 30px;
+      }
+
+      #heading {
+        color: blueviolet;
+        font-size: 50px;
+      }
+      .green-text {
+        color: green;
+
+      .olo {
+        font-size: 500px;
+      }
+
+        /* НЕ ПОНЯТНО, НУЖНА ПОМОЩЬ) */
       }
     </style>
   </head>
   <body>
+    <h1>Heading</h1>
     <!-- ctrl + . - comment -->
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum <span class="green-text"> dolor sit amet.</span></p>
+    <article>
+      <h2 id="heading">Супер мега заголовок!</h2>
+    </article>
+    <p style="color: blue">Lorem<span class="olo">dolor sit amet.</span></p>
   </body>
 </html>
