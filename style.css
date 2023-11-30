@@ -1,0 +1,27 @@
+h1,
+h2,
+h3 {
+  font-size: 100px;
+  background-color: aquamarine;
+}
+
+p {
+  /* color: grey; -- word */
+  /* color: rgb(from color 10 50 13); -- rgb */
+  color: red;
+  font-size: 30px;
+}
+
+#heading {
+  color: blueviolet;
+  font-size: 50px;
+}
+.green-text {
+  color: green;
+
+  .olo {
+    font-size: 500px;
+  }
+
+  /* НЕ ПОНЯТНО, НУЖНА ПОМОЩЬ) */
+}
