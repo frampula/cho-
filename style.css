@@ -1,28 +1,37 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap'); */
+@font-face {
+  font-family: "Shizuru-Regular";
+  src: url(./fonts/Shizuru-Regular.ttf);
+}
 h1,
 h2,
 h3 {
   font-size: 100px;
   background-color: aquamarine;
+  font-family: "Shizuru-Regular";
+  font-weight: bold;
 }
 
 p {
   /* color: grey; -- word */
   /* color: rgb(from color 10 50 13); -- rgb */
-  color: red;
+  color: rgb(119, 0, 255);
   font-size: 30px;
   line-height: 2em;
   text-align: center;
+  font-family: "Shizuru-Regular";
+  font-weight: lighter;
 }
 
 #heading {
-  color: blueviolet;
+  color: rgb(135, 23, 240);
   font-size: 50px;
 }
 .green-text {
   color: green;
 }
-  .olo {
-    font-size: 100px;
+.olo {
+  font-size: 100px;
 }
 
 #btn1 {
@@ -39,13 +48,18 @@ a {
   font-weight: 100;
 }
 
+.five {
+  color: blueviolet;
+}
+
 /* 
 
 line-height - висота лінії
 text-transform - приведення до якогось певного регістру
 background-color - колір заднього фону
 text-decoration - керування лініями під текстом (прибрати з посилання підкреслення)
-font-weight - зробити текст жііірнііі (bold)
+font-weight - зробити текст жііірнііім (bold)
+font-family - шрифти
+4-ая строчка подключение файлов с компа ( ну или мб не только)
 
 */
-
