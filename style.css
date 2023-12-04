@@ -6,3 +6,11 @@
   box-sizing: border-box;
   margin-left: 400px;
 }
+
+div {
+  display: inline;
+}
+
+span {
+  display: block;
+}
