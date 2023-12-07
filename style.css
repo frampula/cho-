@@ -1,5 +1,14 @@
-div :nth-child(1) {
+div {
   width: 100px;
   height: 100px;
   border: 2px solid black;
+}
+div:nth-child(odd) {
+  background-color: red;
+}
+div:nth-child(even) {
+  background-color: green;
+}
+div:nth-child(3n) {
+  background-color: blue;
 }
