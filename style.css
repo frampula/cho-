@@ -1,50 +1,5 @@
-.link-list li {
-  display: inline-block;
-  margin-top: 30px;
+div :nth-child(1) {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
 }
-
-/* 
-inline-block:
-
-- розташовується послідовно, в рядку (як в inline елементах)
-- розмір визначається по контенту (як в inline елементах)
-- елемент завжди прямокутний (як в block елементах)
-- працюють властивості width / height (як в block елементах)
-*/
-
-.page-link {
-  text-decoration: none;
-  background-color: lightblue;
-  padding: 10px;
-  color: rgb(161, 20, 130);
-}
-
-.page-link:hover {
-  background-color: dodgerblue;
-  color: bisque;
-}
-
-.page-link:focus {
-  border: 5px solid green;
-}
-
-.page-link:active {
-  background-color: orange;
-  color: black;
-}
-
-input:focus {
-  background-color: aquamarine;
-}
-
-li:nth-child(odd) {
-  color: orange;
-  background-color: bisque;
-}
-
-/* 
-hover - спрацьовує при наведенні на елемент мишею
-focus - спрацьовує при фокусі на елемент мишею або за допомогою клавіші "ТАБ"
-active - спрацьовує при натисненні на посилання
-first-child - застосовує правила до першого елемента вкладеного в батьківський елемент
-*/
