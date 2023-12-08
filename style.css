@@ -1,4 +1,75 @@
-.paragraph {
+.nav-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.list-item {
   position: relative;
-  left: 50px;
+ display: inline-block;
+ padding: 20px;
+ background-color: rgb(255, 108, 54);
+}
+
+.link {
+ color: white;
+ text-decoration: none;
+ font-size: 20px;
+}
+
+.sub-nav-list {
+ position: absolute;
+ top: 62px;
+ left: -7px;
+ display: block;
+ width: 150px;
+}
+
+.sub-list-item {
+ display: none;
+ background-color: rgb(255, 108, 54);
+ padding: 20px;
+}
+
+.list-item:hover .sub-list-item {
+  display: block;
+}
+
+.sub-sub-nav-list {
+ position: absolute;
+ width: 150px;
+ top: 125px;
+ left: 150px;
+}
+
+.sub-sub-list-item {
+  background-color: rgb(255, 108, 54);
+  padding: 20px;
+  display: none;
+}
+
+.sub-list-item:hover .sub-sub-list-item {
+  display: block;
+}
+
+.sub-sub-sub-nav-list {
+ position: absolute;
+ width: 150px;
+ width: 150px;
+ top: 125px;
+ left: 150px;
+}
+
+.sub-sub-sub-list-item {
+  background-color: rgb(255, 108, 54);
+  padding: 20px;
+  display: none;
+}
+
+.sub-sub-list-item:hover .sub-sub-sub-list-item {
+  display: block;
+}
+
+.sub-list-item:hover, .sub-sub-list-item:hover, .sub-sub-sub-list-item:hover {
+  background-color: rgb(150, 51, 15);
 }
