@@ -7,10 +7,11 @@
 .dad {
   border: 4px solid black;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: end;
-  justify-content: flex-end;
-  height: 150px;
+  justify-content: space-evenly;
+  /* height: 150px; */
+  flex-wrap: wrap;
 }
 
 .daughter {
