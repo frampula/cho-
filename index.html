@@ -7,21 +7,78 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <h1>Форма зворотнього зв'язку</h1>
     <form class="form">
-      <label for="email">Ім'я</label>
-      <input type="text" id="email" placeholder="Вадим" autofocus />
-      <label> Електронна пошта: </label>
-      <input type="password" placeholder="example@email.com" />
-      <label for="password4"> Пароль: </label>
-      <input id="password4" type="password" placeholder="qwerty1234" />
-      <label for="password3"> Телефон: </label>
-      <input id="password3" type="password" placeholder="0995874135" />
-      <label for="password2"> Адреса: </label>
-      <input id="password2" type="password" placeholder="вул.Микитинська, буд..." />
-      <label for="password1"> Дата народження: </label>
-      <input id="password1" type="password" placeholder="14.09.2005">
-      <button type="reset">Зареєструватися</button>
-      <button type="reset">Очистити</button>
+      <fieldset>
+        <legend>Особисті дані</legend>
+        <label>
+          Ім'я
+          <input type="text" />
+        </label>
+        <label>
+          Електронна пошта
+          <input type="email" />
+        </label>
+        <label>
+          Дата народження
+          <input type="date" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Стать</legend>
+        <label>
+          <input type="radio" value="male" name="gender" />
+          Чоловік
+        </label>
+        <label>
+          <input type="radio" value="female" name="gender" />
+          Жінка
+        </label>
+        <label>
+          <input type="radio" value="non-binary" name="gender" />
+          Небінарна персона
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Додаткові налаштування</legend>
+        <label>
+          <input type="checkbox" name="subscribe" value="true" checked />
+          Підписатися на розсилку
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Оберіть категорію своїх інтересів</legend>
+        <select name="category">
+          <optgroup label="Технології">
+            <option value="programming">Програмування</option>
+            <option value="networks">Мережі</option>
+          </optgroup>
+          <optgroup label="Музика">
+            <option value="Rock">Рок</option>
+            <option value="Pop">Поп</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Як ви дізнались про нас</legend>
+        <label>
+          <input type="radio" name="option" value="search systems" />
+          Пошукові системи
+        </label>
+        <label>
+          <input type="radio" name="option" value="social networks" />
+          Соціальні мережі
+        </label>
+        <label>
+          <input type="radio" name="option" value="friends" />
+          Порада друзів/знайомих
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Опишіть свої враження / скарги / пропозиції</legend>
+        <textarea name="comment"></textarea>
+      </fieldset>
+      <button type="submit">Надіслати форму</button>
     </form>
   </body>
 </html>
