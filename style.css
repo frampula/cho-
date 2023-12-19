@@ -1,61 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&family=Shantell+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: lightgrey;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+}
 
-body {
-  font-family: sans-serif;
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  border-bottom: 2px white dashed;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 55px;
 }
 
-form {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px; }
+.form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 10px;
+  justify-content: center;
 }
 
-fieldset {
-  margin-bottom: 20px;
+.card:hover {
+  border: 2px solid orange;
 }
 
-legend {
-  padding: 3px 6px;
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
   margin-bottom: 10px;
 }
 
-label {
-  display: flex;
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-rating {
+  margin-bottom: 5px;
+}
+
+.card-price {
+  font-weight: bolder;
   margin-bottom: 10px;
-  margin-left: 10px;
+  max-width: 200px;
 }
 
-input {
-  margin-left: 5px;
-}
-
-select, textarea  {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-textarea {
-  resize: none;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: rgb(36, 136, 36);
+.add-to-cart {
   color: white;
-  border: none;
+  background-color: rgb(26, 139, 26);
+  border: 0px;
   border-radius: 5px;
-  margin-bottom: 15px;
-}
+  padding: 8px 16px;
+  margin-left:25px;
+  margin-right: 25px; }
+.button {
+  height: 35px;
+  width: 250px;
+ } 
 
-button:hover {
-  background-color: green;
-  cursor: pointer;
-}
+.add-to-cart:hover {
+  background-color: rgb(48, 177, 48); }
+ input {
+  padding: 10px 16px; }

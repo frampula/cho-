@@ -1,84 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex shop</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <h1>Форма зворотнього зв'язку</h1>
-    <form class="form">
-      <fieldset>
-        <legend>Особисті дані</legend>
-        <label>
-          Ім'я
-          <input type="text" />
-        </label>
-        <label>
-          Електронна пошта
-          <input type="email" />
-        </label>
-        <label>
-          Дата народження
-          <input type="date" />
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Стать</legend>
-        <label>
-          <input type="radio" value="male" name="gender" />
-          Чоловік
-        </label>
-        <label>
-          <input type="radio" value="female" name="gender" />
-          Жінка
-        </label>
-        <label>
-          <input type="radio" value="non-binary" name="gender" />
-          Небінарна персона
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Додаткові налаштування</legend>
-        <label>
-          <input type="checkbox" name="subscribe" value="true" checked />
-          Підписатися на розсилку
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Оберіть категорію своїх інтересів</legend>
-        <select name="category">
-          <optgroup label="Технології">
-            <option value="programming">Програмування</option>
-            <option value="networks">Мережі</option>
-          </optgroup>
-          <optgroup label="Музика">
-            <option value="Rock">Рок</option>
-            <option value="Pop">Поп</option>
-          </optgroup>
-        </select>
-      </fieldset>
-      <fieldset>
-        <legend>Як ви дізнались про нас</legend>
-        <label>
-          <input type="radio" name="option" value="search systems" />
-          Пошукові системи
-        </label>
-        <label>
-          <input type="radio" name="option" value="social networks" />
-          Соціальні мережі
-        </label>
-        <label>
-          <input type="radio" name="option" value="friends" />
-          Порада друзів/знайомих
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Опишіть свої враження / скарги / пропозиції</legend>
-        <textarea name="comment"></textarea>
-      </fieldset>
-      <button type="submit">Надіслати форму</button>
-    </form>
-  </body>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-item"><a class="link" href="#">Home</a></li>
+      <li class="nav-item"><a class="link" href="#">Shop</a></li>
+      <li class="nav-item"><a class="link" href="./1/index.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <h1>Flex shop - Main Page</h1>
+
+  <section class="container">
+    <!-- Product 1 -->
+    <article class="card">
+      <img src="./poker.webp" alt="Product 1" />
+      <h2 class="card-title">Product 1</h2>
+      <p class="card-rating">Rating: 4.5</p>
+      <p class="card-price">$10</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <!-- Product 2 -->
+    <article class="card">
+      <img
+        src="https://content.rozetka.com.ua/goods/images/big/15071773.jpg"
+        alt="Product 2"
+      />
+      <h2 class="card-title">Product 2</h2>
+      <p class="card-rating">Rating: 5</p>
+      <p class="card-price">$15</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <!-- Product 3 -->
+    <article class="card">
+      <img
+        src="https://content.rozetka.com.ua/goods/images/big/15071773.jpg"
+        alt="Product 3"
+      />
+      <h2 class="card-title">Product 3</h2>
+      <p class="card-rating">Rating: 3</p>
+      <p class="card-price">$20</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <!-- Product 4 -->
+    <article class="card">
+      <img src="./poker.webp" alt="Product 4" />
+      <h2 class="card-title">Product 4</h2>
+      <p class="card-rating">Rating: 5</p>
+      <p class="card-price">$25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <!-- Product 5 -->
+    <article class="card">
+      <img src="./poker.webp" alt="Product 5" />
+      <h2 class="card-title">Product 5</h2>
+      <p class="card-rating">Rating: 5</p>
+      <p class="card-price">$25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <!-- Product 6 -->
+    <article class="card">
+      <img src="./poker.webp" alt="Product 6" />
+      <h2 class="card-title">Product 6</h2>
+      <p class="card-rating">Rating: 5</p>
+      <p class="card-price">$25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <!-- Product 7 -->
+    <article class="card">
+      <img src="./poker.webp" alt="Product 7" />
+      <h2 class="card-title">Product 7</h2>
+      <p class="card-rating">Rating: 5</p>
+      <p class="card-price">$25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <!-- Product 8 -->
+    <article class="card">
+      <img src="./poker.webp" alt="Product 8" />
+      <h2 class="card-title">Product 8</h2>
+      <p class="card-rating">Rating: 5</p>
+      <p class="card-price">$25</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+  </section>
+  <form class="form">
+    <label for="email">Ім'я</label>
+    <input type="text" id="email" placeholder="Вадим" autofocus />
+    <label> Електронна пошта: </label>
+    <input type="password" placeholder="example@email.com" />
+    <label for="password4"> Пароль: </label>
+    <input id="password4" type="password" placeholder="qwerty1234" />
+    <label for="password3"> Телефон: </label>
+    <input id="password3" type="password" placeholder="0995874135" />
+    <label for="password2"> Адреса: </label>
+    <input id="password2" type="password" placeholder="вул.Микитинська, буд..." />
+    <label for="password1"> Дата народження: </label>
+    <input id="password1" type="password" placeholder="14.09.2005">
+    <button type="reset">Зареєструватися</button>
+    <button type="reset">Очистити</button>
+  </form>
+</body>
 </html>
