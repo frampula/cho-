@@ -1,34 +1,27 @@
-function calculator() {
-  const operand1 = Number(prompt("Введіть перше число"));
-  const operand2 = Number(prompt("Введіть друге число"));
-  const action = prompt("Введіть потрібну дію: +, -, *, /");
-
-  let result;
-
-  switch (action) {
-    case "+": {
-      result = operand1 + operand2;
-      break;
-    }
-    case "-": {
-      result = operand1 - operand2;
-      break;
-    }
-    case "*": {
-      result = operand1 * operand2;
-      break;
-    }
-    case "/": {
-      result = operand1 / operand2;
-      break;
-    }
-    default: {
-      console.log("Сталася помилка");
-    }
-  }
-
-  console.log(result);
+function calculator(num1, num2, functionLink) {
+  let result = functionLink(num1, num2);
+  return result;
 }
 
-calculator();
+console.log(calculator (5, 5, divide));
+
+console.log(calculator(3, 2, function(a,b){
+  return a**b
+}))
+
+function multy(a, b) {
+  return a * b;
+}
+
+function plus(a, b) {
+  return a + b;
+}
+
+function minus(a, b) {
+  return a - b;
+}
+
+function divide(a, b) {
+  return a / b;
+}
 
