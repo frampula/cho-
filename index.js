@@ -1,27 +1,67 @@
-function calculator(num1, num2, functionLink) {
-  let result = functionLink(num1, num2);
-  return result;
+function todo(timeOfDay) {
+  switch (timeOfDay) {
+    case "morning": {
+      brushingTeeth();
+      skinCare();
+      breakfast();
+      break;
+    }
+    case "lunch": {
+      goToOffice();
+      Codding();
+      lunch();
+      Codding();
+      break
+    }
+    case "evening": {
+      education();
+      Codding();
+      goHome();
+      shower();
+      brushingTeeth();
+      skinCare();
+      sleep();
+      break
+    }
+  }
 }
 
-console.log(calculator (5, 5, divide));
+todo("lunch");
 
-console.log(calculator(3, 2, function(a,b){
-  return a**b
-}))
-
-function multy(a, b) {
-  return a * b;
+function brushingTeeth() {
+  console.log("brushingTeeth");
+}
+function skinCare() {
+  console.log("skingCare");
+}
+function breakfast() {
+  console.log("breakfast");
 }
 
-function plus(a, b) {
-  return a + b;
+function goToOffice() {
+  console.log("GoingToOffice");
+}
+function Codding() {
+  console.log("Codding");
 }
 
-function minus(a, b) {
-  return a - b;
+function lunch() {
+  console.log("HavingLunch");
+}
+function breakfast() {
+  console.log("breakfast");
 }
 
-function divide(a, b) {
-  return a / b;
+function education() {
+  console.log("education");
+}
+function goHome() {
+  console.log("goHome");
 }
 
+function shower() {
+  console.log("shower");
+}
+function sleep() {
+  console.log("sleep");
+}
