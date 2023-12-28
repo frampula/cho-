@@ -1,67 +1,14 @@
-function todo(timeOfDay) {
-  switch (timeOfDay) {
-    case "morning": {
-      brushingTeeth();
-      skinCare();
-      breakfast();
-      break;
-    }
-    case "lunch": {
-      goToOffice();
-      Codding();
-      lunch();
-      Codding();
-      break
-    }
-    case "evening": {
-      education();
-      Codding();
-      goHome();
-      shower();
-      brushingTeeth();
-      skinCare();
-      sleep();
-      break
-    }
-  }
+let variable = 5;
+
+function addToNumberSomeVariable(number) {
+  return number + variable
 }
 
-todo("lunch");
+console.log(addToNumberSomeVariable(5))
+console.log(addToNumberSomeVariable(5))
+console.log(addToNumberSomeVariable(5))
+console.log(addToNumberSomeVariable(5))
 
-function brushingTeeth() {
-  console.log("brushingTeeth");
-}
-function skinCare() {
-  console.log("skingCare");
-}
-function breakfast() {
-  console.log("breakfast");
-}
+variable = 20
 
-function goToOffice() {
-  console.log("GoingToOffice");
-}
-function Codding() {
-  console.log("Codding");
-}
-
-function lunch() {
-  console.log("HavingLunch");
-}
-function breakfast() {
-  console.log("breakfast");
-}
-
-function education() {
-  console.log("education");
-}
-function goHome() {
-  console.log("goHome");
-}
-
-function shower() {
-  console.log("shower");
-}
-function sleep() {
-  console.log("sleep");
-}
+console.log(addToNumberSomeVariable(5))
