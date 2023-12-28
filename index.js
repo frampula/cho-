@@ -1,9 +1,34 @@
-let firstResult = Number(prompt("Введіть перше число"));
-let secondResult = Number(prompt("Введіть друге число"));
-let result = firstResult + secondResult;
+function calculator() {
+  const operand1 = Number(prompt("Введіть перше число"));
+  const operand2 = Number(prompt("Введіть друге число"));
+  const action = prompt("Введіть потрібну дію: +, -, *, /");
 
-if (Number.isNaN(result)) {
-  console.log("Ти не правий, введи число");
-} else {
-  console.log(result)
+  let result;
+
+  switch (action) {
+    case "+": {
+      result = operand1 + operand2;
+      break;
+    }
+    case "-": {
+      result = operand1 - operand2;
+      break;
+    }
+    case "*": {
+      result = operand1 * operand2;
+      break;
+    }
+    case "/": {
+      result = operand1 / operand2;
+      break;
+    }
+    default: {
+      console.log("Сталася помилка");
+    }
+  }
+
+  console.log(result);
 }
+
+calculator();
+
