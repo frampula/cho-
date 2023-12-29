@@ -1,14 +1,8 @@
-let variable = 5;
+let truePassword = 'qwerty1234'
 
-function addToNumberSomeVariable(number) {
-  return number + variable
+let pass = prompt ('Enter ur password')
+
+
+while (pass !== truePassword) {
+    pass = prompt ('Enter ur password again')
 }
-
-console.log(addToNumberSomeVariable(5))
-console.log(addToNumberSomeVariable(5))
-console.log(addToNumberSomeVariable(5))
-console.log(addToNumberSomeVariable(5))
-
-variable = 20
-
-console.log(addToNumberSomeVariable(5))
