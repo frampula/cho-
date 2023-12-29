@@ -1,8 +1,6 @@
-let truePassword = 'qwerty1234'
+const correctPassword = "qwerty1234";
+let userPass;
 
-let pass = prompt ('Enter ur password')
-
-
-while (pass !== truePassword) {
-    pass = prompt ('Enter ur password again')
-}
+do {
+    userPass = prompt('Write ur password')
+} while (userPass !== correctPassword)
