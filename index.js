@@ -1,14 +1,52 @@
-function Dog(name, color, age) {
-  this.name = name;
-  this.color = color;
-  this.age = age;
-  this.gav = function () {
-    return this.name + ' gav-gav-gav';
+function Book(title, author, year, price) {
+  this.title = title;
+  this.author = author;
+  this.year = year;
+  this.price = price;
+
+  this.getTitle = function () {
+    return this.title;
+  };
+
+  this.getAuthor = function () {
+    return this.author;
+  };
+
+  this.getYear = function () {
+    return this.year;
+  };
+
+  this.getPrice = function () {
+    return this.price;
+  };
+
+  this.setTitle = function (newTitle) {
+    this.title = newTitle;
+  };
+
+  this.setAuthor = function (newAuthor) {
+    this.author = newAuthor;
+  };
+
+  this.setYear = function (newYear) {
+    this.year = newYear;
+  };
+
+  this.setPrice = function (newPrice) {
+    this.price = newPrice;
+  };
+
+  this.calculateDiscountedPrice = function (discountPercentage) {
+    const discountedPrice =
+      this.price - this.price * (discountPercentage / 100);
+    return discountedPrice;
   };
 }
 
-const dog1 = new Dog("Tuzik", "Black", 1);
+const book1 = new Book("Чотири вітри", "Крістін Генна", 2020, 450);
 
-const dog2 = new Dog("Knopa", "White", 3);
+console.log(book1.getTitle());
+console.log(book1.getYear());
+console.log(book1.calculateDiscountedPrice(90));
 
-const dog3 = new Dog("Liem", "Black", 3);
+book1.setTitle("New title");
