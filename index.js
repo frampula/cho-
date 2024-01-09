@@ -1,19 +1,11 @@
-const departmentSalary = {
-  HR: 120000,
-  development: 550000,
-  PR: 50000,
-  marketing: 120000,
-  assistan: undefined,
-};
-
-function sumSalary(salaryObject) {
-  let sum = 0;
-
-  for (let key in salaryObject) {
-    if (typeof salaryObject[key] === "number") {
-      sum = sum + salaryObject[key];
+let arr = [3, 6, 8, 2, 3, 5, 1]
+let res = 0
+function sum(arrSum) {
+    for(let i = 0; i < arrSum.length; i++) {
+        res += arrSum[i]
     }
-  }
-
-  return sum;
+    return res
 }
+
+
+console.log(sum(arr))
