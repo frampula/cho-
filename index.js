@@ -1,26 +1,19 @@
-// const user = {
-//     name: 'John',
-//     lastName: 'Doe',
-//     age: 20,
-//     'favouirite color': 'red'
-// }
+const departmentSalary = {
+  HR: 120000,
+  development: 550000,
+  PR: 50000,
+  marketing: 120000,
+  assistan: undefined,
+};
 
+function sumSalary(salaryObject) {
+  let sum = 0;
 
-// for (let key in user) {
-//     console.log(`${key} ---> ${user[key]}`)
-// }
-
-const obj = {
-    key1: 'Izi',
-    key2: 'Pizi',
-    key3: 'Lemon',
-    key4: 'Squezy'
-}
-
-function voicetag () {
-    for (let key in obj) {
-        console.log(` '${key}': *${obj[key]}*`)
+  for (let key in salaryObject) {
+    if (typeof salaryObject[key] === "number") {
+      sum = sum + salaryObject[key];
     }
-}
+  }
 
-console.log(voicetag ())
+  return sum;
+}
