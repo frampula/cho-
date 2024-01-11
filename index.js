@@ -1,53 +1,26 @@
-// function array (a,b) {
-//   for (let i = a; i <= b; i++ ) {
-//     console.log(i)
-//   }
-// }
+const arr1 = [1, 2, 3]
+const arr2 = [4, 5, 6]
+const arr3 = [3, 4, 5]
+const arr4 = ['aaa', 'bbb', 'ccc']
+const arr5 = ['3', 7, 10]
+arr1.concat(arr2)
 
-// array (1,15)
-
-// function array (a,b) {
-//   for (let i = a; i <= b; i++ ) {
-//     console.log(i**2)
-//   }
-// }
-
-// array (1,15)
-
-// function array (a,b) {
-//   let sum = 0
-//   for (let i = a; i <= b; i++ ) {
-//     sum += i
-//   }
-//   return sum
-// }
-
-// console.log(array (1,100))
-
-// let student = {
-//   name: "John",
-//   age: 90,
-//   course: 1,
-// };
-
-// function stud(object) {
-//   return `His name ${object.name}, his age ${object.age},
-//   his course ${object.course}`;
-// }
-
-// console.log(stud(student))
-
-// console.log('John' in student)
+console.log(arr1.concat(arr2))
 
 
 
-// function findKey (key, object) {
-//   for (currentKey in object) {
-//     if (key === currentKey) {
-//       return true
-//     }
-//   }
-//   return false
-// }
+console.log(arr1.reverse())
 
-// console.log(findKey ('age', student))
+arr3.push(4, 8, 10)
+
+console.log(arr3)
+
+
+
+console.log(arr4.pop())
+
+arr5.unshift(2, 8)
+
+console.log(arr5)
+
+console.log(arr5.join())
