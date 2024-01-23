@@ -1,21 +1,11 @@
-"use strict";
+function findFibonacci(n) {
+  if (n === 0) {
+    return 0;
+  }
 
-const arrowSum = (...restArray) => {
-  let sum = restArray.reduce ((accumulator, currentValue) => {
-    return accumulator + currentValue
-  })
-  return sum
+  if (n === 1) {
+    return 1;
+  }
+
+  return findFibonacci(n - 1 ) + findFibonacci(n - 2)
 }
-
-console.log(arrowSum(15,15))
-
-// "use strict";
-
-// const arrowSum = (...restArray) => {
-//   return restArray.reduce(
-//     (accumulator, currentValue) => accumulator + currentValue,
-//     0
-//   );
-// };
-
-// console.log(arrowSum(15, 15));
