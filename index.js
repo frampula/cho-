@@ -1,11 +1,28 @@
-function findFibonacci(n) {
-  if (n === 0) {
-    return 0;
+class Fuel {
+  constructor(volume, density) {
+    this.volume = volume;
+    this.density = density;
   }
 
-  if (n === 1) {
-    return 1;
+  getWeight() {
+    return this.volume * this.density;
   }
-
-  return findFibonacci(n - 1 ) + findFibonacci(n - 2)
 }
+
+const gas = new Fuel(50, 0.9);
+console.log(gas.getWeight());
+
+class Auto {
+  constructor(name, ownWeight, fuel) {
+    this.name = name;
+    this.ownWeight = ownWeight;
+    this.fuel = fuel;
+  }
+
+  getFullWeight() {
+    return this.ownWeight + this.fuel.getWeight()
+  }
+}
+const BMW = new Auto('BMW', 4000, gas)
+
+console.log(BMW.getFullWeight())
